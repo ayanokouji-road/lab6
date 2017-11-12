@@ -20,8 +20,6 @@ public class Main {
         all = all.replaceAll("[^a-z^A-Z]", " ");
         all = all.toLowerCase();
         String[] words=all.split("\\s+");
-        //当开头是空格时，一号字符会变成“”空字符，而这里处理换行时，第一行会自动添加一个空格
-        //所以words[0]必定为“”
         String[] input=new String[words.length-1];
         for(int i=0;i<words.length-1;i++)
             input[i]=words[i+1];
